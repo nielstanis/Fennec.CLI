@@ -15,7 +15,7 @@ You can get the tool by running this command
 
 ## Usage
 
-    Usage: fennec.netcore --output-folder=[dir] [assembly...|filepattern...]
+    Usage: fennec.netcore -o=[dir] [assembly...|filepattern...]
 
     dir:
         Output folder to write content to (optional)

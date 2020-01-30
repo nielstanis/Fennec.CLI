@@ -15,15 +15,22 @@ You can get the tool by running this command
 
 ## Usage
 
-    Usage: fennec.netcore -o=[dir] [assembly...|filepattern...]
+    Fennec.NetCore - .NET Core API dumper 0.4.0
 
-    dir:
-        Output folder to write content to (optional)
-    assembly:
-        Single assembly name
-    filepattern:
-        file pattern that matches a set of files..
+    Dump used API's of .NET assembly/assemblies.
+
+    Usage:  [options] <assembly>
+
+    Arguments:
+    assembly                List of assemblies or file pattern
+
+    Options:
+    -h|--help               Show help information
+    -v|--version            Show version information
+    -o|--output[:<FOLDER>]  Output Folder
+    -f|--format[:<FORMAT>]  File Format, either JSON or FXT
 
 ## Versions
 
+- 0.4.0 second released version for NDC London 2020
 - 0.1.0 first released version at Microsoft Build 2019

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <PackAsTool>true</PackAsTool>
+        <ToolCommandName>fennec</ToolCommandName>
+        <PackageOutputPath>./Packages</PackageOutputPath>
+        <Version>0.7.0</Version>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="4.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Fennec.Scorecard\Fennec.Scorecard.csproj" />
+      <ProjectReference Include="..\Fennec.Instrumentation\Fennec.Instrumentation.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Fennec.NetCore.Output;
+using Fennec.Instrumentation;
+using Fennec.Instrumentation.Output;
 using McMaster.Extensions.CommandLineUtils;
 
 namespace Fennec.NetCore
@@ -26,7 +27,7 @@ namespace Fennec.NetCore
             {
                 string folder = outputFolder.HasValue() ? outputFolder.Value() : ".";
                 string type = outputType.HasValue() ? outputType.Value() : "fxt";
-                var writer = Output.WriterFactory.CreateWriter(type, folder);
+                var writer = WriterFactory.CreateWriter(type, folder);
 
                 foreach (var arg in ass.Values)
                 {
